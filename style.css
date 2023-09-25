@@ -1,0 +1,302 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul, ol {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: black; 
+}
+body {
+    font-family: 'Cardo', serif;
+    font-size: 16px;
+    color: black;
+    background-color: #F8F5F2;
+}
+/* NAVBAR */
+.navbar {
+    display: flex;
+    width: 100%;
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.gauche {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+.gauche a {
+    padding-left: 14%;
+}
+.gauche a, .droite a {
+    font-size: 1.6rem;
+    font-style: italic;
+}
+.droite {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+.droite a {
+    padding-right: 10%;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////// PAGE 1 ACCUEIL *******************
+//////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.titre-page-accueil {
+    text-align: center;
+    padding-top: 70px;
+}
+.titre-page-accueil h1:first-child {
+    font-size: 7.8rem;
+    font-weight: 200;
+}
+.titre-page-accueil h1:last-child {
+    font-size: 7.8rem;
+    font-weight: 500;
+    font-style: italic;
+    margin-top: -30px;
+}
+.container-video {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.7em 4em;
+}
+.premier-p p, .second-p p{
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+.second-p p {
+    text-align: right;
+}
+.video-accueil {
+    padding-left: 5%;
+    max-width: 100%;
+    height: auto;
+}
+.troisieme-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 4rem;
+}
+.troisieme-p p {
+    font-size: 3.2rem;
+    font-weight: 500;
+    width: 48%;
+    text-align: center;
+    line-height: 3.5rem;
+}
+.container-footer {
+    border-top: solid 1px black;
+    margin-top: 7.2rem;
+    display: flex;
+}
+.footer-gauche {
+    width: 45%;
+    border-right: solid 1px black;
+    padding: 5% 4%;
+}
+.footer-gauche h2 {
+    font-size: 2.3rem;
+    font-weight: 300;
+    padding-bottom: 1rem;
+}
+.gauche-haut p:first-of-type {
+    font-size: 1.2rem;
+    font-family: 'Gantari', sans-serif;
+    padding-bottom: 0.7rem;
+}
+.gauche-haut p:nth-child(3) {
+    font-style: italic;
+    color: #666666;
+    font-family: 'Gantari', sans-serif;
+    font-size: 1.1rem;
+    padding-bottom: 2.5rem;
+}
+.gauche-haut p:nth-child(4) {
+    font-size: 1.2rem;
+    font-family: 'Gantari', sans-serif;
+    padding-bottom: 0.7rem;
+}
+.gauche-haut p:nth-child(5) {
+    font-size: 1.2rem;
+    font-family: 'Gantari', sans-serif;
+    padding-bottom: 4rem;
+}
+.gauche-bas p:first-of-type {
+    font-size: 1.2rem;
+    font-family: 'Gantari', sans-serif;
+    padding-bottom: 0.7rem;
+}
+.gauche-bas p:nth-child(3), .gauche-bas p:nth-child(5) {
+    font-style: italic;
+    color: #666666;
+    font-family: 'Gantari', sans-serif;
+    font-size: 1.1rem;
+    padding-bottom: 0.7rem;
+}
+.gauche-bas p:nth-child(4) {
+    font-family: 'Gantari', sans-serif;
+    font-size: 1.1rem;
+    padding-bottom: 0.7rem;
+}
+.gauche-bas p:nth-child(5) {
+    padding-bottom: 0;
+}
+.footer-droite {
+    width: 100%;
+}
+.droite-haut {
+    border-bottom: solid 1px black;
+    padding: 8% 7%;
+}
+.droite-haut h2 {
+    font-size: 2.3rem;
+    font-weight: 300;
+    padding-bottom: 2rem;
+}
+.droite-haut p:first-of-type {
+    text-decoration: underline;
+    font-family: 'Gantari', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-bottom: 1.8rem;
+}
+.droite-haut p:nth-child(3) {
+    font-family: 'Gantari', sans-serif;
+    font-size: 1.1rem;
+    color: #666666;
+    line-height: 1.8rem;
+    padding-bottom: 3.8rem;
+}
+.droite-haut a {
+    font-family: 'Gantari', sans-serif;
+    font-size: 1.2rem;
+}
+.droite-bas {
+    display: flex;
+    text-align: center;
+    padding: 0 7%;
+    align-items: center;
+    height: 22%;
+}
+.droite-bas p, .lien-reseau a {
+    font-family: 'Gantari', sans-serif;
+    font-size: 1.2rem;
+}
+.lien-reseau {
+    text-decoration: underline;
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    padding-left: 20%;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////// PAGE 2 MENU *******************
+//////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.titre-menu {
+    display: flex;
+    justify-content: center;
+    padding-top: 90px;
+}
+.titre-menu h1:first-child, .titre-menu h1:last-child {
+    font-size: 5rem;
+    font-weight: 200;
+}
+.titre-menu h1:first-child {
+    padding-right: 1%;
+}
+.texte-titre-menu {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.texte-titre-menu p {
+    padding-top: 0.7rem;
+    letter-spacing: 0.3px;
+    font-family: 'Gantari', sans-serif;
+    font-size: 1.5rem;
+}
+.photo-arbre {
+    position: absolute;
+    right: 0;
+    top: 25%;
+}
+.type-de-plat {
+    padding: 0 15%;
+    padding-top: 6%;
+}
+.type-de-plat h2 {
+    font-size: 3.2rem;
+    font-weight: 200;
+}
+.type-de-plat h2:first-child {
+    margin-bottom: -1rem;
+}
+.description-plat1 {
+    display: flex;
+    justify-content: space-between;
+    max-width: 50%;
+    padding-top: 1.5rem;
+    padding-right: 3rem;
+}
+.description-plat1 p {
+    font-family: 'Gantari', sans-serif;
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+.description-plat1 p:last-child {
+    text-align: right;
+}
+.container-plat {
+    padding: 0 15%;
+    padding-top: 6%;
+}
+.titre-categorie h3 {
+    font-size: 3.2rem;
+    font-weight: 200;
+    padding-bottom: 2rem;
+    margin-left: -7px;
+}
+.nom-plat {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;    
+}
+.plat {
+    width: 50%;
+    padding-right: 3rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.plat div {
+    flex-grow: 1;
+}
+.plat1 p:nth-child(2) {
+    color: #848484;
+    font-size: 1rem;
+    padding-top: 0.7rem;
+}
+.plat p {
+    font-family: 'Gantari', sans-serif;
+    font-size: 1.2rem;
+}
+.preavis {
+    padding: 6% 15%;
+}
+.preavis p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #3d3d3d;
+    font-family: 'Gantari', sans-serif;
+}
