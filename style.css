@@ -18,6 +18,9 @@ body {
     background-color: #F8F5F2;
 }
 /* NAVBAR */
+.navbar-tel {
+    display: none;
+}
 .navbar {
     display: flex;
     width: 100%;
@@ -187,6 +190,7 @@ body {
     padding: 0 7%;
     align-items: center;
     height: 22%;
+    border-left: solid 1px black;
 }
 .droite-bas p, .lien-reseau a {
     font-family: 'Gantari', sans-serif;
@@ -299,4 +303,259 @@ body {
     font-style: italic;
     color: #3d3d3d;
     font-family: 'Gantari', sans-serif;
+}
+/* PAGE CONTACT */
+input[type="text"] {
+    width: 100%;
+    margin: 15px 0;
+    background-color: #F8F5F2;
+    border: none;
+    border-bottom: solid 1px black;
+    padding: 10px 12px;
+    color: #666666;
+    font-family: 'Gantari', sans-serif;
+}
+input[id="nom"] {
+    margin-top: 25px;
+}
+input[id="message"] {
+    height: 100px;
+    padding-bottom: 75px;
+    margin-bottom: 10px;
+}
+input[type="submit"] {
+    font-family: 'Gantari', sans-serif;
+    background-color: #F8F5F2;
+    border: none;
+    margin: 15px 0;
+    padding: 10px 12px;
+    font-size: 0.9rem;
+    border-bottom: solid 1px black;
+    cursor: pointer;
+}
+.container-formumu {
+    width: 20%;
+    margin: 50px auto;
+}
+.container-nouveau-compte {
+    display: flex;
+    margin-bottom: 20px;
+}
+.container-nouveau-compte a {
+    padding-left: 10px;
+    text-decoration: underline;
+}
+input#courriel, input#mdp {
+    margin: 0;
+    margin-bottom: 20px;
+}
+input#nom, input#prenom, input#telephone, input#courriel, input#mdp, input#mdpc {
+    margin: 0;
+}
+.form1 {
+    margin-bottom: 7px;
+}
+input[type="password"] {
+    width: 100%;
+    margin: 15px 0;
+    background-color: #F8F5F2;
+    border: none;
+    border-bottom: solid 1px black;
+    padding: 10px 12px;
+    color: #666666;
+    font-family: 'Gantari', sans-serif;
+}
+/* ******************************************************************************************************************************************************
+/./././././././                                                        MEDIA QUERIES                                                    ./././././../././
+****************************************************************************************************************************************************** */
+@media screen and (max-width: 768px) {
+    /* PAGE ACCUEIL */
+    .navbar-tel {
+        display: flex;
+    }
+    .navbar {
+        display: none;
+    }
+    .menu {
+        position: relative;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+      }
+      .icone-menu-burger {
+        cursor: pointer;
+      }
+      .icone-menu-burger i {
+        padding-left: 15px;
+      }
+      .menu-deroulant {
+        position: absolute;
+        top: 0;
+        left: -310px; /* Le menu sera initialement caché à gauche */
+        width: 290px;
+        background-color: #F8F5F2;
+        transition: left 0.3s ease; /* Ajoute une transition fluide */
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+      .menu-deroulant span {
+        position: absolute;
+        top: 1%;
+        z-index: 1;
+      }
+      .fermer-menu {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        font-size: 20px;
+        display: block;
+        font-size: 30px;
+      }
+      .menu-deroulant ul {
+        list-style-type: none;
+        padding-top: 0;
+      }  
+      .menu-deroulant ul li {
+        padding: 18px 25px;
+        text-align: left;
+        border-bottom: solid 1px black;
+        font-weight: 700;
+        font-size: 0.95rem;
+        letter-spacing: 0.1rem;
+      }  
+      .menu-deroulant ul li:first-child {
+        /* height: 25px; */
+        padding: 20px 10px;
+        padding-bottom: 21px;
+      }
+      .menu-deroulant ul li a {
+        text-decoration: none;
+        color: #000000;
+      }
+      .icone-menu-burger {
+            display: flex;
+            position: absolute;
+            left: 5%;
+    }
+    .titre-page-accueil h1:first-child {
+        font-size: 3.8rem;
+    }
+    .titre-page-accueil h1:last-child {
+        font-size: 3.8rem;
+    }
+    .premier-p, .second-p {
+        display: none;
+    }
+    .video-accueil img {
+        max-width: 100%;
+    }
+    .troisieme-p {
+        padding-top: 2.5rem;
+    }
+    .troisieme-p p {
+        font-size: 2.2rem;        
+        width: 80%;
+        line-height: 2.5rem;
+    }
+    .container-footer {
+        border-top: solid 1px black;
+        margin-top: 7.2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-gauche {
+        width: 100%;
+        border-right: none;
+        border-bottom: solid 1px black;
+        padding: 5% 4%;
+    }
+    .droite-haut {
+        border-bottom: solid 1px black;
+        padding: 7% 4%;
+    }
+    .droite-bas {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-items: start;   
+        padding: 0;
+        padding: 15px 4%;
+        width: 100%;
+        border-left: none;
+    }
+    .lien-reseau {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        padding-left: 0;
+        padding: 15px 4%;
+    }
+    /* PAGE MENU */
+    .photo-arbre {
+        display: none;
+    }
+    .titre-menu h1:first-child, .titre-menu h1:last-child {
+        font-size: 3.5rem;
+    }
+    .texte-titre-menu p {
+        font-size: 1.2rem;
+    }
+    .type-de-plat {
+        padding: 0 10%;
+        padding-top: 6%;
+    }
+    .type-de-plat h2 {
+        font-size: 2.5rem;
+    }
+    .description-plat1 {
+        display: flex;
+        justify-content: space-between;
+        max-width: 100%;
+        padding-top: 1.5rem;
+        padding-right: 0;
+    }
+    .description-plat1 p:first-child {
+        max-width: 65%;
+        line-height: 1.8rem;
+    }
+    .container-plat {
+        padding: 0 10%;
+        padding-top: 6%;
+    }
+    .titre-categorie h3 {
+        font-size: 2.5rem;
+    }
+    .nom-plat {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;    
+    }
+    .plat {
+        width: 100%;
+        padding-right: 0;
+        padding-bottom: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .plat div {
+        flex-grow: 1;
+    }
+    #test, #test2, #test3, #test4, #test5 {
+        position: relative;
+        left: 88%;
+        bottom: 70%;
+    }
+    .plat p {
+        font-family: 'Gantari', sans-serif;
+        font-size: 1.1rem;
+    }
+    .container-formumu {
+        width: 80%;
+        margin: 50px auto;
+    }
+    
 }
