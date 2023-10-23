@@ -1,11 +1,3 @@
-<?php
-
-$page = isset($_GET['page']) ? $_GET['page'] : '';
-
-function isPageActive($currentPage, $targetPage) {
-    return $currentPage === $targetPage ? 'active' : '';
-}
-?>
 <html>
 <body>
 

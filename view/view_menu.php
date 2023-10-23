@@ -1,11 +1,10 @@
 <?php
-
-$page = isset($_GET['page']) ? $_GET['page'] : '';
-
-function isPageActive($currentPage, $targetPage) {
-    return $currentPage === $targetPage ? 'active' : '';
-}
+$sql = "SELECT * FROM categorie_plats";
+$stmt = $bdd->query($sql);
+$categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
+
+
 <html>
 <body>
 
@@ -60,48 +59,24 @@ function isPageActive($currentPage, $targetPage) {
         <h3>Entrées</h3>
     </div>
     <div class="nom-plat">
-        <div class="plat">
-            <div class="plat1">
-                <p>FIOR DI LATTE</p>
-                <p>Maïs, Porc, Chili Crisp</p>
+        <?php
+        $sql = "SELECT * FROM plats WHERE id_categorie_plats = 1";
+        $stmt = $bdd->query($sql);
+        $plats = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        foreach ($plats as $plat) {
+            ?>
+            <div class="plat">
+                <div class="plat1">
+                    <p><?= $plat['nom_plats']; ?></p>
+                    <p><?= $plat['description_plats']; ?></p>
+                </div>
+                <p><?= $plat['prix_plats']; ?></p>
             </div>
-            <p>23,00</p>
-        </div>
-        <div class="plat">
-            <div class="plat1">
-                <p>POLPETTES D'AGNEAU</p>
-                <p>Polenta, Tomate, Ricotta</p>
-            </div>
-            <p>22,00</p>
-        </div>
-        <div class="plat">
-            <div class="plat1">
-                <p>PORCHETTA</p>
-                <p>Mayo au Thon, Champignons du Camp de Pêche</p>
-            </div>
-            <p>23,00</p>
-        </div>
-        <div class="plat">
-            <div class="plat1">
-                <p>LA BROCHETTE</p>
-                <p>Légumes de la Baigneuse, Pieuvre, Romesco</p>
-            </div>
-            <p>22,00</p>
-        </div>
-        <div class="plat">
-            <div class="plat1">
-                <p>LE HOT PÉTONCLE</p>
-                <p>Pain Brioché, Sauce Mornay</p>
-            </div>
-            <p>25,00</p>
-        </div>
-        <div class="plat">
-            <div class="plat1">
-                <p>CREVETTES</p>
-                <p>Crème à l'Estragon, Caviar</p>
-            </div>
-            <p>23,00</p>
-        </div>
+            <?php
+        }
+        ?>
+    
     </div>
 </div>
 
@@ -110,48 +85,24 @@ function isPageActive($currentPage, $targetPage) {
         <h3>Plats principaux</h3>
     </div>
     <div class="nom-plat">
-        <div class="plat">
-            <div class="plat1">
-                <p>BURRATA</p>
-                <p>Risotto aux Champignons, Pistaches, Basilic</p>
+        <?php
+        $sql = "SELECT * FROM plats WHERE id_categorie_plats = 2";
+        $stmt = $bdd->query($sql);
+        $plats = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        foreach ($plats as $plat) {
+            ?>
+            <div class="plat">
+                <div class="plat1">
+                    <p><?= $plat['nom_plats']; ?></p>
+                    <p><?= $plat['description_plats']; ?></p>
+                </div>
+                <p><?= $plat['prix_plats']; ?></p>
             </div>
-            <p>32,00</p>
-        </div>
-        <div class="plat">
-            <div class="plat1">
-                <p>PÊCHE DU JOUR</p>
-                <p>Pommes de Terre Frites, Sauce Hollandaise, Citron Confit</p>
-            </div>
-            <p>31,00</p>
-        </div>
-        <div class="plat">
-            <div class="plat1">
-                <p>STEAK AND EGG</p>
-                <p>Boeuf AAA, Céleri-Rave, Oignons Caramélisés, Sauce Foie Gras</p>
-            </div>
-            <p>45,00</p>
-        </div>
-        <div class="plat">
-            <div class="plat1">
-                <p>PINTADE</p>
-                <p>Sauce Suprême, Bettes à Carde, Harissa, Amandes</p>
-            </div>
-            <p>35,00</p>
-        </div>
-        <div class="plat">
-            <div class="plat1">
-                <p>SIDE</p>
-                <p>Aglio e Olio</p>
-            </div>
-            <p>10,00</p>
-        </div>
-        <div class="plat">
-            <div class="plat1">
-                <p>SIDE</p>
-                <p>Baba Gannouj</p>
-            </div>
-            <p>10,00</p>
-        </div>
+            <?php
+        }
+        ?>
+    
     </div>
 </div>
 
@@ -160,20 +111,24 @@ function isPageActive($currentPage, $targetPage) {
         <h3>Desserts</h3>
     </div>
     <div class="nom-plat">
-        <div class="plat">
-            <div class="plat1">
-                <p>GÂTEAU AUX CAROTTES</p>
-                <p>Mascarpone Fouetté, Noix Sablées, Sauce Caramel</p>
+        <?php
+        $sql = "SELECT * FROM plats WHERE id_categorie_plats = 3";
+        $stmt = $bdd->query($sql);
+        $plats = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        foreach ($plats as $plat) {
+            ?>
+            <div class="plat">
+                <div class="plat1">
+                    <p><?= $plat['nom_plats']; ?></p>
+                    <p><?= $plat['description_plats']; ?></p>
+                </div>
+                <p><?= $plat['prix_plats']; ?></p>
             </div>
-            <p>10,00</p>
-        </div>
-        <div class="plat">
-            <div class="plat1">
-                <p>FRAISE</p>
-                <p>Meringue, Basilic, Noix de Grenoble</p>
-            </div>
-            <p>10,00</p>
-        </div>        
+            <?php
+        }
+        ?>
+    
     </div>
 </div>
 
